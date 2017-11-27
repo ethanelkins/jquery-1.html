@@ -22,6 +22,14 @@ function swapHeadlines(){
     $('h1').text(swap1);
     $('h2').text(swap);
 }
+function noSubhead(){
+  $('h2').fadeOut();
+  $('h3').fadeOut();
+}
+function undo(){
+  $('h2').show();
+  $('h3').show();
+}
   </script>
 </head>
 <body>
