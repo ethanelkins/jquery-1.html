@@ -3,6 +3,11 @@
 <head>
   <title>jQuery test page</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+  .bylinestyle {
+    background: yellow;
+  }
+  </style>
   <script>
 function  getHeadline(){
   var text = $('h1').text();
@@ -29,6 +34,12 @@ function noSubhead(){
 function undo(){
   $('h2').show();
   $('h3').show();
+}
+function highlightByline(){
+  $('.byline').addClass('bylinestyle');
+}
+function unHighlightByline(){
+  $('.byline').removeClass('bylinestyle');
 }
   </script>
 </head>
